@@ -74,3 +74,38 @@ div #clock:hover {
   letter-spacing: 0.2em;
   font-weight: 300;
 }
+
+/*modal alarm*/
+.modalAlarmOverlay{
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: #ee3a3a2f; 
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.modalAlarmText{
+    color: #888;
+}
+.modalAlarmOverlay.active{
+    display: flex;
+}
+.modalAlarmContent{ /*contenu de la pop up avec animation*/
+    background: #101010;
+    padding: 30px 40px;
+    border-radius: 10px;
+    position: relative; 
+    min-width: 300px;
+    text-align: center;
+}
+.close-btn { /*bouton de fermeture*/
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #888;
+}
+.close-btn:hover {
+    color: #e74c3c;
+}

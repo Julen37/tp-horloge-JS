@@ -12,10 +12,18 @@
         
         <div id="clock">
             <div>
-                <button class="btn" id="btnSnooze">Snooze</button>
                 <button class="btn" id="btnAlarm">Alarm</button>
+                <div id="modalAlarm" class="modalAlarmOverlay">
+                    <div class="modalAlarmContent">
+                            <span class="close-btn" id="closeBtn">&times;</span> 
+                            <h2 class="modalAlarmText">Set your Alarm :</h2>
+                            <!-- mettre un input pour choisir l'heure et un autre bouton pour confirmer + une alert qui dit que l'alarm a été setup-->
+                            <p class="modalAlarmText">pas encore codé sorry</p>
+                    </div>
+                </div>
+                <button class="btn" id="btnSnooze">Snooze</button>
             </div>
-            <p id="time">323232</p>
+            <p id="time"></p>
         </div>
     </div>
 </body>

@@ -1,23 +1,4 @@
 
-//-------------------------------set an alarm modal-------------------------------------
-document.getElementById("btnAlarm").onclick = function(){
-    document.getElementById("modalAlarm").classList.add("active");
-};
-document.getElementById("closeBtn").onclick = function(){ 
-    document.getElementById("modalAlarm").classList.remove("active"); 
-};
-window.onclick = (e) => {
-    if(e.target === modalAlarm){
-        modalAlarm.classList.remove("active"); 
-    }
-};
-
-
-
-
-
-
-
 //------------------------------CLOCK----------------------------------------------------------------------------
 
 // -------------------------------idée 1----------------------------------
@@ -52,10 +33,6 @@ window.onclick = (e) => {
 // };
 // seconde();
 
-
-
-
-
 //---------------------------test avec les trucs de js ---------------------
 
 
@@ -80,3 +57,36 @@ function Time(){
 Time();
 
 setInterval(() => Time(), 1000); // pour que ca se refresh toute les 1s
+
+
+//-------------------------------set an alarm modal-------------------------------------
+document.getElementById("btnAlarm").onclick = function(){
+    document.getElementById("modalAlarm").classList.add("active");
+};
+document.getElementById("closeBtn").onclick = function(){ 
+    document.getElementById("modalAlarm").classList.remove("active"); 
+};
+window.onclick = (e) => {
+    if(e.target === modalAlarm){
+        modalAlarm.classList.remove("active"); 
+    }
+};
+
+/*
+pour l'alarme:
+
+je veux que ce que je set dans l'input:
+
+    -> soit pris en compte
+        + verifie que l'heure actuelle n'est pas la meme que celle qu'on set sinon erreur
+        + enregistre l'heure set quand on clique sur le bouton
+        + affiche un message qui dit que l'alarme a bien été set
+        + bonus/ ajoute un petit symbole qui previent l'utilisateur qu'il y a bien une alarme de mise 
+
+    -> sonne a l'heure set a l'heure qu'il faut
+        + sonne en repeat
+
+    -> s'arrete seulement quand on appui sur snooze
+
+
+*/

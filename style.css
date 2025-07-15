@@ -100,3 +100,7 @@ div #clock {
 .close-btn:hover {
     color: #e74c3c;
 }
+
+#settingAlarm{
+    border-radius: 10px;
+}

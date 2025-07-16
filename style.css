@@ -53,6 +53,7 @@ div #clock {
     opacity: 40%;
     padding: 5px;
     width: 10em;
+    text-align: center;
 }
 .btn:hover{
     background-color: #ee3a3a;

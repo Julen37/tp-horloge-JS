@@ -33,7 +33,7 @@
 // };
 // seconde();
 
-//---------------------------test avec les trucs de js ---------------------
+//---------------------------test avec les bases native de js ---------------------
 
 
 // // // version avec tous les trucs deja pré fait dans le js 
@@ -43,7 +43,7 @@ function zeroAdd(i){ // pour mettre un zero devant 0 a 9
         i = "0" + i // tu prends la valeur i donné et tu la remplaces pour ajouter un "0" avant
     }
     return i
-}
+} // j'aurai pu faire .padStart(2, "0") à la place sur second min hours ca fait moins de ligne
 
 function Time(){
     const d = new Date(); // natif a js, prend la date du jour + heure ...
@@ -56,7 +56,8 @@ function Time(){
 }
 Time();
 
-setInterval(() => Time(), 1000); // pour que ca se refresh toute les 1s
+// setInterval(() => Time(), 1000); // pour que ca se refresh toute les 1s
+setInterval(Time, 1000);
 
 
 //-------------------------------set an alarm modal-------------------------------------
@@ -88,5 +89,13 @@ je veux que ce que je set dans l'input:
 
     -> s'arrete seulement quand on appui sur snooze
 
-
 */
+
+
+
+
+//---------snooze---------
+// si appuie sur snooze alors que l'alarm est off, mettre un message qui dit qu'il n'y a pas d'alarm set
+// si par contre l'alarme est set quand on appui  mais que ce n'est pas encore l'heure redire quand est ce que ca va sonner la prochaine alarme
+// si du coup l'alarme sonne parce que c'est l'heure alors des que j'appuie dessus l'alarme s'arrete et marque un message genre alarme bien arreté
+
